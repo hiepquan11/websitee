@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Noto Serif", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", "Arial", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif;
+    font-weight: 400;
+}
+
+body {
+    padding: 190px;
+    background-image: url(./img/ban-quyen-world-cup-2022-cong-bo-truoc-gio-g-201104.webp);
+}
+
+
+/* Header/Blog Title */
+
+.header {
+    padding: 10px;
+    text-align: center;
+    background-image: url(./img/hinh-background-bong-da-de-thuong_045002251.jpg);
+    color: #58257b;
+}
+
+.header h1 {
+    font-size: 40px;
+}
+
+.header p {
+    font-size: 20px;
+}
+
+
+/* Style the top navigation bar */
+
+.topnav {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+    background-image: url(./img/0012af0c37b17abfb3d4.jpg);
+}
+
+
+/* Định dạng link điều hướng */
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+
+/* Thay đổi màu liên kết khi di chuột qua */
+
+.topnav a:hover {
+    color: green;
+}
+
+
+/* Tạo hai cột không bằng nhau, float cạnh nhau */
+
+
+/* Cột trái */
+
+.leftcolumn {
+    float: left;
+    width: 75%;
+}
+
+
+/* Cột phải */
+
+.rightcolumn {
+    float: left;
+    width: 25%;
+    padding-left: 20px;
+}
+
+
+/* Thêm định dạng thẻ cho bài viết */
+
+.card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.card a {
+    color: #000;
+    text-decoration: none;
+}
+
+.card a:hover {
+    color: blue;
+}
+
+
+/* Clear float khác sau các cột */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* Footer */
+
+.footer {
+    padding: 10px;
+    text-align: left;
+    background-color: #f2f2f2;
+    background-image: url(./img/nh-footer474417831293.png);
+    margin-top: 10px;
+}
+
+.footer a {
+    color: #000;
+    text-decoration: none;
+}
+
+
+/* Bố cục linh hoạt: các cột xếp chồng lên nhau thay vì cạnh nhau khi màn hình có chiều rộng dưới 700px */
+
+@media screen and (max-width: 700px) {
+    .leftcolumn,
+    .rightcolumn {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+
+/* Bố cục linh hoạt: Thanh menu điều hướng xếp chồng lên nhau thay vì cạnh nhaukhi màn hình có chiều rộng dưới 300px  */
+
+@media screen and (max-width: 300px) {
+    .topnav a {
+        float: none;
+        width: 100%;
+    }
+}
